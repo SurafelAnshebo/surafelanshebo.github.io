@@ -1,175 +1,282 @@
 <!DOCTYPE HTML>
-<!--
-	Dimension by HTML5 UP
-	html5up.net | @ajlkn
-	Free for personal and commercial use under the CCA 3.0 license (html5up.net/license)
--->
 <html>
 	<head>
 		<title>Surafel Tesfaye</title>
 		<meta charset="utf-8" />
 		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
 		<link rel="stylesheet" href="assets/css/main.css" />
-		<!--[if lte IE 9]><link rel="stylesheet" href="assets/css/ie9.css" /><![endif]-->
-		<noscript><link rel="stylesheet" href="assets/css/noscript.css" /></noscript>
+		<style>
+			.project {
+				margin-bottom: 60px; /* Space between projects */
+				display: flex;
+				flex-direction: column;
+				align-items: center;
+				text-align: center;
+				width: 100%; /* Make sure the project takes full width */
+				padding: 20px; /* Add padding for better spacing */
+				box-sizing: border-box; /* Ensure padding and borders are included in width */
+			}
+			.project-header {
+				display: flex;
+				align-items: center;
+				justify-content: center;
+				margin-bottom: 10px;
+				flex-wrap: wrap; /* Allow titles to wrap to the next line if needed */
+			}
+
+			.project-title {
+				font-weight: bold;
+				font-size: 1.5em;
+				margin-bottom: 10px;
+				flex: 1; /* Allow titles to take up remaining space */
+				text-align: left;
+			}
+			.project-gif {
+				width: 100%;
+				height: auto;
+				display: block;
+				margin: 0 auto; /* Center the GIF */
+				border-radius: 8px;
+				max-width: 500px; /* Add a maximum width for the GIFs */
+			}
+			.project-description {
+				margin-top: 15px;
+				font-size: 1em;
+				color: #e0e0e0;
+				max-width: 600px;
+				margin: 15px auto;
+				text-align: justify;
+			}
+			.github-link {
+				margin-top: 10px;
+				font-size: 1em;
+				color: #ff5722; /* Bright orange for better visibility */
+				text-decoration: none;
+				display: block;
+			}
+			.github-link:hover {
+				text-decoration: underline;
+			}
+			/* Ensure projects are listed vertically */
+			#Projects .project {
+				width: 100%;
+				display: block;
+				margin-bottom: 40px;
+			}
+		</style>
 	</head>
 	<body>
 
 		<!-- Wrapper -->
-			<div id="wrapper">
+		<div id="wrapper">
 
+			<!-- Header -->
+			<header id="header">
+				<div class="logo">
+					<span class="icon fa-laptop"></span>
+				</div>
+				<div class="content">
+					<div class="inner">
+						<h1>Surafel Tesfaye Anshebo</h1>
+					</div>
+				</div>
+				<nav>
+					<ul>
+						<li><a href="#intro"><strong>Intro</strong></a></li>
+						<li><a href="#Projects"><strong>Projects</strong></a></li>
+						<li><a href="#contact"><strong>Contact</strong></a></li>
+						<li><a href="#Resume"><strong>Resume</strong></a></li>
+					</ul>
+				</nav>
+				<div>
+					<ul class="icons">
+						<li><a href="https://twitter.com/STACH_21" class="icon fa-twitter"><span class="label">Twitter</span></a></li>
+						<li><a href="https://github.com/SurafelTesfaye" class="icon fa-github"><span class="label">GitHub</span></a></li>
+						<li><a href="https://www.linkedin.com/in/surafeltesfaye21/" class="icon fa-linkedin"><span class="label">Linkedin</span></a></li>
+					</ul>
+				</div>
+			</header>
 
-				<!-- Header -->
-					<header id="header">
-						<div class="logo">
-							<span class="icon fa-laptop"></span>
-						</div>
-						<div class="content">
-							<div class="inner">
-								<h1>Surafel Tesfaye</h1>
-								<p style="font-size:16px;">
-								</p>
+			<!-- Main -->
+			<div id="main">
+				<article id="intro">
+					<h2 class="major">Intro</h2>
+					<p><span class="image main"><img src="images/me_eting.jpg" alt="" /></span></p>
+					<p>
+						I am a second-year master's student at Virginia Tech working as a graduate research assistant at the uncrewed systems lab, advised by Professor Kevin Kochersberger. I am mainly responsible for supporting the African Drone and Data Academy in Malawi, which is now expanding to Niger and Ethiopia.
+						<br style="line-height:200;"> I hold a Bachelor's degree in Mechanical Engineering from Addis Ababa Science and Technology University. My research interests lie in Aerial Robotics, Computer Vision, and Dynamics and Control.
+					</p>
+				</article>
+
+				<!-- Projects -->
+				<article id="Projects">
+					<h3 id="-projects">
+						<i class="icon fa-chevron-right"></i>
+						Selected Projects
+					</h3>
+
+					<div class="project">
+						<div class="project-header">
+							<div class="project-title">1. Comparative Study of Vision Based Methods on UAV for Real-Time Traffic Monitoring
 							</div>
 						</div>
-						<nav>
-							<ul>
-								<li><a href="#intro"><strong>Intro</strong></a></li>
-								<li><a href="#Projects"><strong>Projects</strong></a></li>
-								<li><a href="#contact"><strong>Contact</strong></a></li>
-								<li><a href="#Resume"><strong>Resume</strong></a></li>
-							</ul>
-						</nav>
-						<div>
-							<ul class="icons">
-									<li><a href="https://twitter.com/STACH_21" class="icon fa-twitter"><span class="label">Twitter</span></a></li>
-									
-									<li><a href="https://github.com/SurafelTesfaye" class="icon fa-github"><span class="label">GitHub</span></a></li>
-									<li><a href="https://www.linkedin.com/in/surafeltesfaye21/" class="icon fa-linkedin"><span class="label">Linkedin</span></a></li>
-							</ul>
+						<div class="project">
+							<div class="project-header"></div>
+							<div style="font-size: 1.5em;">Presented at Xponential 2024 in San Diego</div>
+							<img src="images/Xponential.PNG" alt="Xponential Presentation" class="project-gif" />
+							<a href="https://www.researchgate.net/publication/380097724_COMPARATIVE_STUDY_OF_VISION-BASED_METHODS_FOR_REAL-TIME_TRAFFIC_MONITORING" class="github-link" target="_blank" style="font-size: 1.7em; color: #ff5222;"><b>Read on ResearchGate(link)</b></a>
+							<p class="project-description" style="font-size: 1.2em; text-align: justify; color: #e0e0e0;">
+								This paper conducts a comparative analysis of traditional computer vision and 
+								deep learning-based vehicle detection and tracking algorithms using UAV for real-time traffic 
+								monitoring application. 
+								In conventional computer vision methods, the Haar cascade method is used with the Kanade-Lucas optical 
+								flow tracker. 
+								This technique is compared with deep learning-based methods YoloV7 with DeepSORT to detect and track vehicles. 
+								A qualitative and quantitative analysis is performed in simulation and then tested on an in-house built UAV. 
+								The goal is to support informed decision-making in perception and planning, ultimately enhancing safety 
+								in the industry. 
+								By evaluating these methods on a UAV platform, the research provides valuable insights 
+								for industry stakeholders to choose the most suitable approach for their specific requirements.
+							</p>
 						</div>
-					</header>
 
-									<!-- Main -->
-					<div id="main">
-						<article id="intro">
-							<h2 class="major">Intro</h2>
-							<p><span class="image main"><img src="images/me_eting.jpg" alt="" /></span></p>
-							<p>
-I am a first year masters student at Virginia Tech working as a graduate research assistant at the uncrewed systems lab and advised by Professor Kevin Kochersberger. I am mainly responsible for supporting the African Drone and Data Academy in Malawi which is now expanding to Niger and Ethiopia. 
+					<div class="project">
+						<div class="project-header">
+							<div class="project-title">2. Flood Mapping, Search & Rescue Operation Using S500 drone
+							</div>
+							<div class="project">
+								<div class="project-header"></div>
+								<div style="font-size: 1.5em;">Final project for African Drone and Data Academy CDDT2</div>
+								<img src="images/Flood_Mapping.gif" alt="Flood Mapping" class="project-gif" />
+								<a href="https://media.licdn.com/dms/document/media/D4E2DAQHjO0qJfEsaRQ/profile-treasury-document-pdf-analyzed/0/1694325668820?e=1723680000&v=beta&t=siDZLoap-qOII5BXC1139dGYrXQ2T7O2uAoZHVUiBvs" class="github-link" target="_blank" style="font-size: 1.7em; color: #ff5222;"><b>Read full paper(link)</b></a>
+								<p class="project-description" style="font-size: 1.2em; text-align: justify; color: #e0e0e0;">
+									In this project have been able to predict how likely an area
+									is affected by flood using aerial images and analyzing the images for the
+									likelihood of the event to recur again.
+									Furthermore the project has also addressed the areas by reaching out to
+									the areas affected by delivering life-saving materials if a flood occurs.
+								</p>
+							</div>
 	
-	<br style = “line-height:200;”> I previously completed my bachelors degree in Mechanical Engineering from Addis Ababa Science and Technology University and I worked for four years at Coca Cola Beverages Africa as Line Process engineer.
-  							
-							<br>
-						</article>
-
-						<!-- Projects -->
-						<article id="Projects">
-								<h3 id="-projects">
-									<i class="icon fa-chevon-right"></i>
-									Selected Projects
-								</h3>
-							
-								<table class="table table-hover">
-									<tbody>
-										<tr>
-											<td class="col-md-3">Addis Ababa Science and Technology University</td>
-											<td>
-												<strong>Design and simulation of vibrating soil compactor machine</strong> 
-											</td>
-										</tr>
-										
-										<tr>
-											<td class="col-md-3">Addis Ababa Science and Technology University</td>
-											<td>
-												<strong>Industrial bottle defect identifying machine</strong> 
-											</td>
-										</tr>
-										<tr>
-											<td class="col-md-3">Addis Ababa Science and Technology University</td>
-											<td>
-												<strong>Smart home automation</strong>
-											</td>
-										</tr>
-										<tr>
-											<td class="col-md-3">Addis Ababa Science and Technology University</td>
-											<td>
-												<strong>Design and manufacturing of cement plastering machine</strong> 
-											</td>
-										</tr>
-										<tr>
-											<td class="col-md-3">Coca Cola Beverages Africa - Ethiopia</td>
-											<td>
-												<strong>Designed effective level control system for, 8Ton industrial boiler daily fuel tank and condensate return tank</strong> 
-											</td>
-										</tr>
-										
-										
-												<tr>
-											<td class="col-md-3">African Drone and Data Academy Malawi</td>
-											<td>
-												<strong>Flood Mapping, search and rescue operation using S-500 Drone</strong> 
-											</td>
-										</tr>
-
-																						<tr>
-											<td class="col-md-3">Virginia Tech</td>
-											<td>
-												<strong>Image Wrapping using 2D Homography</strong> 
-											</td>
-										</tr>
-
-										
-
-
-
-																						<tr>
-											<td class="col-md-3">Virginia Tech</td>
-											<td>
-												<strong> Full State Feedback Control Design Using Pole Placement
-
-</strong> 
-											</td>
-										</tr>
-
-
-
-
-
-										
-										
-										
-									</tbody>
-								</table>
-							
-							</p>
-						</article>
-
-						<!-- Contact -->
-						<article id="contact">
-							<h3> Email : </h3>
-							<p>surafelrtesfaye [at] gmail [dot] com </p>
-						</article>
-
-
-						<article id="Resume">
-						<p>
-							For all the gory details check out my resume
-							<h3><a href="https://drive.google.com/file/d/1wOaR2T-n5BqXH1kJTJWhiFBVymp5fjlO/view?usp=sharing">UPDATED FULL RESUME (pdf)</a></h3>
-							</p>
-						</article>
+					<div class="project">
+						<div class="project-header">
+							<div class="project-title">3. Full State Feedback Control Design Using Pole Placement</div>
+						</div>
+						<img src="images/FullStateFeedbackControl.gif" alt="Full State Feedback Control" class="project-gif" />
+						<a href="https://github.com/SurafelTesfaye/Full-State-Feedback-Control-Design-Using-Pole-Placement" class="github-link" target="_blank" style="font-size: 1.7em; color: #ff5222;"><b>Github(link)</b></a>
+						<p class="project-description" style="font-size: 1.2em; text-align: justify; color: #e0e0e0;">
+							This project was part of my Applied Linear Systems class on fall 2023 taught by Dr Southward. 
+							It is a project focusing on the smooth, controlled landing of drones. This repository features a 
+							MATLAB Live Script implementation of full-state feedback control, utilizing pole placement to 
+							optimize system dynamics for stable descent.
+						</p>
 					</div>
 
+					<div class="project">
+						<div class="project-header">
+							<div class="project-title">4. Image wrapping using 2D Homography</div>
+						</div>
+						
+						<img src="images/2D_Homography.gif" alt="2D Homography" class="project-gif" />
+						<a href="https://github.com/SurafelTesfaye/Image-wrapping-using-2D-Homography" class="github-link" target="_blank" style="font-size: 1.7em; color: #ff5222;"><b>Github(link)</b></a>
+						<p class="project-description" style="font-size: 1.2em; text-align: justify; color: #e0e0e0;">
+							This project was part of my Computer Vision class assignment on fall 2023 taught by Dr Abbott. 
+							It is a project focused to employ mathematical principles and algorithms to calculate the homographic 
+							transformation, enabling the wrapping of one image onto another. In this project we have two images first is the 
+							rubicks cube and second one is the mandrill image. The mandrill image is wrapped onto the rubicks cube image.
+						</p>
+					</div>
+
+					<div class="project">
+						<div class="project-header">
+							<div class="project-title">5. Face detection for blinking an LED using serial communication</div>
+						</div>
+						<img src="images/arduino_serial.gif" alt="Arduino Serial Communication" class="project-gif" />
+						<a href="https://github.com/SurafelTesfaye/OpenCV-with-Arduino" class="github-link" target="_blank" style="font-size: 1.7em; color: #ff5222;"><b>Github(link)</b></a>
+						<a href="https://www.youtube.com/watch?v=Zhuh3iWxCHI" class="github-link" target="_blank" style="font-size: 1.7em; color: #ff5222;"><b>YouTube(link)</b></a>
+						<p class="project-description" style="font-size: 1.2em; text-align: justify; color: #e0e0e0;">
+							This is a home project I did as an undergrad, the idea is I used my webcam to detect my face using 
+							Haar Cascade then if my face is detected 
+							LED hooked to my Arduino will blink. Whenever I detect a face, I will print, "Face is detected" then 
+							send serial command to my arduino which inturn 
+							turns my LED to ON. Conversely, if the face is not detected, I will print, "Face is not 
+							detected" then send serial command to my arduino which inturn turns my LED to OFF.
+						</p>
+					</div>
+
+					<div class="project">
+						<div class="project-header">
+							<div class="project-title">6. Boiler fuel tank level control system</div>
+						</div>
+						<img src="images/boiler.gif" alt="Boiler Level Control System" class="project-gif" />
+						<a href="https://www.youtube.com/watch?v=qNE8CcWIHSU" class="github-link" target="_blank" style="font-size: 1.7em; color: #ff5222;"><b>YouTube(link)</b></a>
+						<p class="project-description" style="font-size: 1.2em; text-align: justify; color: #e0e0e0;">
+							This project was undertaken during my time in the Graduate Trainee Program at Coca-Cola Beverages Africa, 
+							working alongside my colleagues Robel and Rediet. At the time, the boiler system was experiencing redundant 
+							sensor failures, leading to costly and hazardous fuel overflows. Our approach began with thoroughly 
+							diagnosing the issue, followed by selecting an appropriate magnetic float level sensor. We then built a control board to 
+							manage the fuel levels—activating the pump when the level was low and stopping it when the level was high. 
+							Additionally, we incorporated a buzzer to alert operators if the fuel level became too high, enhancing safety 
+							and operational efficiency.
+						</p>
+					</div>
+
+					<div class="project">
+						<div class="project-header">
+							<div class="project-title">7. Home made conveyor</div>
+						</div>
+						<img src="images/conveyor.gif" alt="Conveyor System" class="project-gif" />
+
+
+						<a href="https://www.youtube.com/shorts/QhDlPsaEk_Y" class="github-link" target="_blank" style="font-size: 1.7em; color: #ff5222;"><b>YouTube(link)</b></a>
+						<p class="project-description" style="font-size: 1.2em; text-align: justify; color: #e0e0e0;">
+							This is a fun home project I built with my dad, using repurposed materials 
+							I bought from Merkato which were meant to be thrown out as junk like DC motor, a stepper motor, conduit pipe, power screw, and 
+							different nuts and bolts. I also reused an old ATX power supply from my desktop to power the motors.
+						</p>
+					</div>
+
+					<div class="project">
+						<div class="project-header">
+							<div class="project-title">8. Wall plastering machine </div>
+						</div>
+						<img src="images/Wall_Plastening.gif" alt="Wall Plastering Machine" class="project-gif" />
+
+
+						<p class="project-description" style="font-size: 1.2em; text-align: justify; color: #e0e0e0;">
+							This project was my final year thesis at Addis Ababa Science and Technology University, completed as part of my 
+							Bachelor's degree in Mechanical Engineering. The SolidWorks assembly design (shown in the GIF) features a machine 
+							designed to plaster cement on walls, addressing the safety risks associated with scaffolding accidents. Additionally, 
+							the machine significantly improves efficiency in terms of both time and cost.
+						</p>
+					</div>
+
+				</article>
+
+				<!-- Contact -->
+				<article id="contact">
+					<h3>Email:</h3>
+					<p>surafela [at] vt [dot] edu</p>
+				</article>
+
+				<article id="Resume">
+					<p>
+						For all the gory details, check out my resume:
+						<h3><a href="https://drive.google.com/file/d/1wOaR2T-n5BqXH1kJTJWhiFBVymp5fjlO/view?usp=sharing">UPDATED FULL RESUME (pdf)</a></h3>
+					</p>
+				</article>
 			</div>
+
+		</div>
 
 		<!-- BG -->
-			<div id="bg">
-			</div>
+		<div id="bg"></div>
 
 		<!-- Scripts -->
-			<script src="assets/js/jquery.min.js"></script>
-			<script src="assets/js/skel.min.js"></script>
-			<script src="assets/js/util.js"></script>
-			<script src="assets/js/main.js"></script>
+		<script src="assets/js/jquery.min.js"></script>
+		<script src="assets/js/skel.min.js"></script>
+		<script src="assets/js/util.js"></script>
+		<script src="assets/js/main.js"></script>
 
 	</body>
 </html>
